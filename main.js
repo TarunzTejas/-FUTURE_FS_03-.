@@ -33,7 +33,7 @@ form.addEventListener('submit', async (e) => {
   status.textContent = "Sending...";
 
   try {
-    const res = await fetch('http://localhost:5000/contact', {
+    const res = await fetch("https://tarun-portfolio-server.onrender.com/contact", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
