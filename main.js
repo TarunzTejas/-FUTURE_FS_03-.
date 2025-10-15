@@ -36,7 +36,11 @@ form.addEventListener('submit', async (e) => {
     const res = await fetch("https://future-fs-03-1-bu5w.onrender.com", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      
       body: JSON.stringify(data),
+      name: nameValue,
+      email: emailValue,
+      message: messageValue
     });
 
     const result = await res.json();
