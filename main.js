@@ -33,7 +33,7 @@ form.addEventListener('submit', async (e) => {
   status.textContent = "Sending...";
 
   try {
-    const res = await fetch("https://future-fs-03-1-bu5w.onrender.com", {
+    const res = await fetch("https://future-fs-03-1-bu5w.onrender.com/contact", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       
